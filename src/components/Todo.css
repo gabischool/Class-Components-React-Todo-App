@@ -1,0 +1,103 @@
+
+.todo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.2);
+    width: 40rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    height: 30rem;
+    color: #000;
+    text-transform: capitalize;
+    overflow: auto;
+
+}
+.title{
+    font-size: 2rem;
+    text-align: center;
+    transition: all .2s;
+    backface-visibility: hidden;
+}
+
+input{
+    width: 300px;
+    padding: .6rem 1rem ;
+    font-size: 1rem;
+    background-color: rgb(212, 203, 203);
+    border: none;
+    border-radius: 3px;
+    border-bottom: 3px solid transparent;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid green;
+}
+
+.add{
+    background-color: rgb(67, 175, 67);
+    color: #fff;
+    transform: translateY(2px);
+    padding: .6rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    margin-left: 1rem;
+}
+.add:hover{
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
+}
+.add:active{
+    transform: translateY(0px);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.clearBtn{
+    background-color: rgb(211, 100, 100);
+    color: #fff;
+    transform: translateY(2px);
+    margin-left: 1rem;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    z-index: -100;
+}
+
+.clearBtn:hover{
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
+}
+.clearBtn:active{
+    transform: translateY(0px);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.title:hover{
+    transform: scale(1.1);
+}
+.completed{
+    text-decoration:line-through;
+    background-color: rgba(240, 155, 155, 0.452);
+    opacity: .8;
+    transition: all .2s;
+}
+.completed:hover{
+    opacity: 1;
+}
+.clear-task{
+    display: none;
+}
+.task{
+
+    padding: 1rem 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.task:hover{
+    transform: scale(1.005);
+}
